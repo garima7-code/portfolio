@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Image from "next/image";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import EmailSection from "./components/EmailSection";
 
  export default function Home() {
   return (
@@ -12,6 +13,7 @@ import ProjectsSection from "./components/ProjectsSection";
         <HomePage />
         <AboutSection />
         <ProjectsSection />
+        <EmailSection />
       </div>
 
     </main>
