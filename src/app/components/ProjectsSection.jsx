@@ -4,10 +4,10 @@ import ProjectCard from './ProjectCard';
 const projectsData = [
     {
         id: 1,
-        title: "React Porfolio",
-        description: "My First react project",
+        title: "React Portfolio",
+        description: "My First React project",
         image: "/images/projects/pro__1.png",
-        tag:["All", "Web"],
+        tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
     },
@@ -15,15 +15,23 @@ const projectsData = [
 
 const ProjectsSection = () => {
     return (
-        <>
+        <section id="projects">
             <h2>My Projects</h2>
-            <div className='grid md:grid-cols-3 gap-8 md:gap-12'
-            >{projectsData.map((project) => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image}
-                gitUrl={project.gitUrl} previewUrl={project.previewUrl}
+            <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
+                {projectsData.map((project) => (
+                    <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        description={project.description}
+                        imgUrl={project.image}
+                        gitUrl={project.gitUrl}
+                        previewUrl={project.previewUrl}
+                        tags={project.tag} // Pass tags as a prop
+                    />
+                ))}
+            </div>
+        </section>
+    );
+};
 
-            />)}</div>
-        </>
-    )
-}
-
-export default ProjectsSection
+export default ProjectsSection;
