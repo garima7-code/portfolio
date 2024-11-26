@@ -26,9 +26,9 @@ const navLinks = [
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#db9ac7] bg-opacity-100'>
-      <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-3'>
-        <Link href={"/"} className="text-2xl md:text-5xl text-black font-semibold">LOGO</Link>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#01332B] bg-opacity-100'>
+      <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-5'>
+        {/* <Link href={"/"} className="text-2xl md:text-5xl text-black font-semibold">LOGO</Link> */}
         <div className='mobile-menu block md:hidden'>
           {
             !navbarOpen ? (

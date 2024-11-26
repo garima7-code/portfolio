@@ -67,3 +67,8 @@
       @apply bg-background text-foreground;
     }
   }
+
+  /* Apply the Google font globally */
+body {
+  font-family: 'Montserrat', sans-serif;
+}

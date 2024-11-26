@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
@@ -55,8 +54,8 @@ const EmailSection = () => {
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4' id="contact">
       <div>
-        <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
-        <p className="text-white mb-4 max-w-md">
+        <h5 className='text-xl font-bold text-black my-2'>Let's Connect</h5>
+        <p className="text-black mb-4 max-w-md">
           I'm currently looking for new opportunities. If my portfolio matches your requirements, feel free to contact me by sending me an email.
         </p>
         <div className='socials flex flex-row gap-5'>
@@ -71,7 +70,7 @@ const EmailSection = () => {
 
       <div>
         <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
-          <label htmlFor='name' className='text-white block text-sm font-medium'>Your Name</label>
+          <label htmlFor='name' className='text-black block text-sm font-medium'>Your Name</label>
           <input
             type="text"
             id="name"
@@ -83,7 +82,7 @@ const EmailSection = () => {
             onChange={handleChange}
           />
          
-          <label htmlFor='email' className='text-white block text-sm font-medium'>Your Email</label>
+          <label htmlFor='email' className='text-black block text-sm font-medium'>Your Email</label>
           <input
             type="email"
             id="email"
@@ -95,7 +94,7 @@ const EmailSection = () => {
             onChange={handleChange}
           />
 
-          <label htmlFor='subject' className='text-white block text-sm font-medium'>Subject</label>
+          <label htmlFor='subject' className='text-black block text-sm font-medium'>Subject</label>
           <input
             type="text"
             id="subject"
@@ -108,7 +107,7 @@ const EmailSection = () => {
           />
 
           {/* Message */}
-          <label htmlFor='message' className='text-white block text-sm mb-2 font-medium'>Message</label>
+          <label htmlFor='message' className='text-black block text-sm mb-2 font-medium'>Message</label>
           <textarea
             id="message"
             name="message"
@@ -121,7 +120,7 @@ const EmailSection = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className='bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'
+            className='bg-gradient-to-br from-[#477e75] via-[#778A35] to-[#D1E2C4] hover:bg-[#D1E2C4] text-[#e3e3e1] text-bold font-medium py-2.5 px-5 rounded-lg w-full'
             disabled={isSending}
           >
             {isSending ? 'Sending...' : 'Send '}

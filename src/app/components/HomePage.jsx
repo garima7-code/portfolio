@@ -38,7 +38,7 @@ const slugs = [
 
 export function IconCloudDemo() {
   return (
-    <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg  bg-[#FFD0D0] px-20 pb-20 pt-8">
+    <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg  bg-[#EFEFE9] px-20 pb-20 pt-8">
       <IconCloud iconSlugs={slugs} />
     </div>
   );
@@ -49,8 +49,8 @@ const HomePage = () => {
     <section>
       <div className='grid grid-cols-1 lg:grid-cols-12'>
         <div className='col-span-7 place-self-center text-center sm:text-left'>
-          <h1 className='text-blue-800 mb-4 text-4xl lg:text-6xl font-extrabold'>
-            <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-300'> Hi, I'M </span>
+          <h1 className='text-[#01332B] mb-4 text-4xl lg:text-6xl font-extrabold'>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#778A35] to-[#D1E2C4]'> Hi, I'M </span>
             <br />
             <TypeAnimation
               sequence={[
@@ -68,12 +68,12 @@ const HomePage = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className='text-[#E1ACAC] text-base sm:text-lg mb-8 lg:text-xl'>
+          <p className='text-black text-base sm:text-lg mb-8 lg:text-xl'>
             I am a full stack dev and I am learning React by using this project.
           </p>
           <div>
-            <button className='px-6 py-3 mr-4 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-400 to-pink-400 hover:bg-blue-400 text-white text-bold rounded-full border border-white'>HIRE ME</button>
-            <button className='px-6 py-3 mr-4 mt-3 w-full sm:w-fit bg-blue-600 hover:bg-blue-400 text-bold rounded-full border border-white'>DOWNLOAD CV</button>
+            <button className='px-6 py-3 mr-4 w-full sm:w-fit bg-gradient-to-br from-[#477e75] via-[#778A35] to-[#D1E2C4] hover:bg-[#D1E2C4] text-[#e3e3e1] text-bold rounded-full border border-[#778A35]'>HIRE ME</button>
+            <button className='px-6 py-3 mr-4 mt-3 w-full sm:w-fit bg-[#EFEFE9] hover:bg-[#fcfefa] text-black text-bold rounded-full border border-black'>DOWNLOAD CV</button>
           </div>
         </div>
         <div className='col-span-5 place-self-center mt-5 '>

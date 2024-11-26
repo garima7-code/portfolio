@@ -11,7 +11,7 @@ export const cloudProps = {
       alignItems: "center",
       width: "100%",
       paddingTop: 40,
-            backgroundColor: "#FFD0D0", // Set background color here
+            backgroundColor: "#EFEFE9", // Set background color here
 
     },
   },
