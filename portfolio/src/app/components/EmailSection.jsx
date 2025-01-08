@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import emailjs from 'emailjs-com'; 
+import emailjs from 'emailjs-com';
 
 const EmailSection = () => {
   const [formData, setFormData] = useState({
@@ -24,14 +24,14 @@ const EmailSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSending(true); 
+    setIsSending(true);
 
     emailjs
       .send(
-        'service_83tzgou',   
-        'template_l4iaxsk',   
-        formData,         
-        'rbPnnN6BT_k3GhBI1' 
+        'service_83tzgou',
+        'template_l4iaxsk',
+        formData,
+        'rbPnnN6BT_k3GhBI1'
       )
       .then(
         (response) => {
@@ -54,9 +54,9 @@ const EmailSection = () => {
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4' id="contact">
       <div>
-        <h5 className='text-xl font-bold text-black my-2'>Let's Connect</h5>
+        <h5 className='text-xl font-bold text-black my-2'>Let&apos;s Connect</h5>
         <p className="text-black mb-4 max-w-md">
-          I'm currently looking for new opportunities. If my portfolio matches your requirements, feel free to contact me by sending me an email.
+          I&apos;m currently looking for new opportunities. If my portfolio matches your requirements, feel free to contact me by sending me an email.
         </p>
         <div className='socials flex flex-row gap-5'>
           <Link href="https://github.com/garima7-code">
@@ -81,7 +81,7 @@ const EmailSection = () => {
             value={formData.name}
             onChange={handleChange}
           />
-         
+
           <label htmlFor='email' className='text-black block text-sm font-medium'>Your Email</label>
           <input
             type="email"
@@ -112,7 +112,7 @@ const EmailSection = () => {
             id="message"
             name="message"
             className='bg-gray-100 border border-black placeholder-gray-300 text-gray-800 text-sm rounded-lg w-full p-2.5'
-            placeholder="Let's talk!"
+            placeholder="Let&apos;s talk!"
             value={formData.message}
             onChange={handleChange}
           />

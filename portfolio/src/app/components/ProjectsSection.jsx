@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import Image from 'next/image';
 
 const projectsData = [
     {
@@ -39,7 +40,7 @@ const ProjectsSection = () => {
                                     Your browser does not support the video tag.
                                 </video>
                             ) : (
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.title}
                                     className="w-full h-auto rounded-lg"
