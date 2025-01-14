@@ -4,6 +4,8 @@ import { TypeAnimation } from 'react-type-animation';
 import IconCloud from "@/components/magicui/icon-cloud";
 import NavLink from './NavLink';
 import Link from "next/link";
+import Image from "next/image";
+
 
 const navLinks = [
   {
@@ -49,8 +51,8 @@ const HomePage = () => {
             />
           </h1>
           <p className='text-black text-base sm:text-lg mb-8 lg:text-xl'>
-            exploring cool tech 🔍  
-            Curiosity drives me — always learning and building 🚀  
+            exploring cool tech 🔍
+            Curiosity drives me — always learning and building 🚀
             Let&apos;s create something awesome together! 🌟
           </p>
 
@@ -60,9 +62,12 @@ const HomePage = () => {
                 HIRE ME
               </button>
             </Link>
-            <button className='px-6 py-3 mr-4 mt-3 w-full sm:w-fit bg-[#EFEFE9] hover:bg-[#fcfefa] text-black text-bold rounded-full border border-black'>
-              DOWNLOAD CV
-            </button>
+            <a href="/images/pdfs/Resume_garima.pdf" download="Resume_garima.pdf" target="_blank">
+              <button className="px-6 py-3 mr-4 mt-3 w-full sm:w-fit bg-[#EFEFE9] hover:bg-[#fcfefa] text-black text-bold rounded-full border border-black">
+                DOWNLOAD CV
+              </button>
+            </a>
+
           </div>
         </div>
         <div className='col-span-5 place-self-center mt-5'>
